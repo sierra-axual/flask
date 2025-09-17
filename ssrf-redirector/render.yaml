@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ssrf-redirector
+    env: python
+    buildCommand: ""
+    startCommand: python redirector.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
